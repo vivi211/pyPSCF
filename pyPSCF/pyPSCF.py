@@ -110,6 +110,7 @@ class PSCF:
         # TODO: properly handle pd_kwarg
         self.data = pd.read_csv(concFile,
                                 index_col=0,
+                                sep=";",
                                 parse_dates=["date"], **pd_kwarg)
 
         self.wfunc = wfunc
